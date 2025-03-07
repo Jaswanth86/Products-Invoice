@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Box, Button, useMediaQuery, useTheme } from '@mui/material';
+import { Container, Typography, Box, Button, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { products as initialProducts, stores } from '../data/sampleData';
 import ProductList from './ProductList';
@@ -19,7 +19,6 @@ function ProductManagement() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const navigate = useNavigate();
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   useEffect(() => {
     const productsWithStoreName = initialProducts.map(product => ({
