@@ -1,4 +1,5 @@
 Product Management Portal
+
 Welcome to the Product Management Portal, a React-based web application designed to manage products across multiple stores and generate invoices for store owners. This application features a responsive design, a consistent Material-UI-based styling system, and full CRUD (Create, Read, Update, Delete) functionality for products.
 
 Table of Contents
